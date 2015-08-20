@@ -81,26 +81,30 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/08/18/my-new-post/" title="my new post" itemprop="url">my new post</a>
+      <a href="/2015/08/20/使用github-pages-hexo搭建博客/" title="使用github pages+hexo搭建博客" itemprop="url">使用github pages+hexo搭建博客</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Jianwen" target="_blank" itemprop="author">Jianwen</a>
 		
   <p class="article-time">
-    <time datetime="2015-08-18T08:08:20.000Z" itemprop="datePublished"> 發表於 2015-08-18</time>
+    <time datetime="2015-08-20T02:16:27.000Z" itemprop="datePublished"> 發表於 2015-08-20</time>
     
   </p>
 </header>
     <div class="article-content">
         
-        <h1 id="一级标题">一级标题</h1><h2 id="二级标题">二级标题</h2><h5 id="四级标题">四级标题</h5><ul>
-<li>文本1</li>
-<li>文本2<br>1.文本1<br>2.文本2<br><a href="http://jianshu.io" target="_blank" rel="external">简书</a><br><img src="http://ww4.sinaimg.cn/bmiddle/aa397b7fjw1dzplsgpdw5j.jpg" alt=""></li>
-</ul>
+        <p>虽说参考了不少文章，但每篇文章都不能说是绝对的完善，因此搭建过程还是走了不少的弯路，在此主要对别人的文章进行一次整合，并将自己遇到的一些问题记录下来</p>
+<h1 id="环境的搭建">环境的搭建</h1><p>起初的<a href="http://cnfeat.com/2014/05/10/2014-05-11-how-to-build-a-blog/" target="_blank" rel="external">参考文章是这</a>，但是它有不少的错别字，以及很多步骤没有解释清楚，导致在安装hexo过程中，始终没法用 hexo s启动本地服务，最后找到了<a href="http://blog.csdn.net/astraylinux/article/details/46455761" target="_blank" rel="external">这篇文章</a>，了解到下面这几个指令是不可或缺的：<br>npm install hexo –save<br>npm install hexo-server –save<br>npm install hexo-deployer-git –save<br>这是Hexo安装插件的方法，我认为是不是hexo安装以及它的本地服务的安装是分开的，导致之前的失败。这算是我遇到的第一个坑。</p>
+<p>第二个坑是在服务启动后，hexo g 始终无法生成主页，打开<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 链接总是报错“cannot GET /”查了半天，原来是在运行hexo之前还要运行下面这条指令：<br>npm install<br>这能将hexo 缺少的依赖装上，解决这个问题后，主页顺利打开，Oh yeah!</p>
+<p>最后还有<a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">这篇文章</a>应该看一下，步骤解释的更为详细</p>
+<h1 id="主页显示内容修改">主页显示内容修改</h1><h4 id="页脚用户头像">页脚用户头像</h4><p>这是修改了主题的内容，需要在主题目录下的source文件夹了进行修改后重新生成html，我这里需要将img下的author.jpg更换为我自己的头像。</p>
+<h4 id="侧边栏分类和标签的显示">侧边栏分类和标签的显示</h4><p>除了<a href="http://wuchong.me/blog/2014/11/20/how-to-use-jacman/" target="_blank" rel="external">这篇文章</a>提到的，在source目录下建立tags<br> 和 categories<br>文件夹以外，新建博客时千万不要忘了它应该是这个样子的：</p>
 <blockquote>
-<p>一盏灯， 一片昏黄； 一简书， 一杯淡茶。 守着那一份淡定， 品读属于自己的寂寞。 保持淡定， 才能欣赏到最美丽的风景！ 保持淡定， 人生从此不再寂寞。</p>
+<p>title: postName #文章页面上的显示名称，可以任意修改，不会出现在URL中<br>date: 2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改<br>categories:  #文章分类目录，可以为空，注意:后面有个空格<br>tags: #文章标签，可空，多标签请用格式[tag1,tag2,tag3]，注意:后面有个空格<br> -–<br>这里开始使用markdown格式输入你的正文。</p>
 </blockquote>
+<p>少了categories和tags这两项，主页上是不会把他们显示出来的。</p>
+<h1 id="其它杂七杂八">其它杂七杂八</h1><p>关于设置独立域名，基本每篇文章都有提到，但cname的概念和域名的概念，仅有<a href="http://coolshell.info/blog/2015/03/github-pages-blog.html" target="_blank" rel="external">这篇文章</a>提到了，另外，在github上界面操作你的github pages项目，应该读一读<a href="http://blog.csdn.net/renfufei/article/details/37725057" target="_blank" rel="external">这一篇博客</a>。</p>
 
         
         
@@ -111,6 +115,16 @@
     <footer class="article-footer clearfix">
 <div class="article-catetags">
 
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/hexo/">hexo</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/github-pages/">github pages</a><a href="/tags/hexo/">hexo</a>
+  </div>
 
 </div>
 
@@ -137,14 +151,14 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/08/18/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/2015/08/20/hello-world/" title="Hello World" itemprop="url">Hello World</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Jianwen" target="_blank" itemprop="author">Jianwen</a>
 		
   <p class="article-time">
-    <time datetime="2015-08-18T04:52:47.854Z" itemprop="datePublished"> 發表於 2015-08-18</time>
+    <time datetime="2015-08-20T02:00:37.837Z" itemprop="datePublished"> 發表於 2015-08-20</time>
     
   </p>
 </header>
@@ -169,6 +183,16 @@
     <footer class="article-footer clearfix">
 <div class="article-catetags">
 
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/default/">default</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/hexo/">hexo</a>
+  </div>
 
 </div>
 
@@ -198,8 +222,38 @@
 <aside class="clearfix">
 
   
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/default/" title="default">default<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
 
   
+<div class="tagslist">
+	<p class="asidetitle">標簽</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/hexo/" title="hexo">hexo<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/github-pages/" title="github pages">github pages<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
 
   <div class="linkslist">
   <p class="asidetitle">友情鏈接</p>

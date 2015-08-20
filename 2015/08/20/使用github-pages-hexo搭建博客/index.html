@@ -4,26 +4,26 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Hello World | Hexo</title>
+    <title>使用github pages+hexo搭建博客 | Hexo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Jianwen">
     
 
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+    <meta name="description" content="虽说参考了不少文章，但每篇文章都不能说是绝对的完善，因此搭建过程还是走了不少的弯路，在此主要对别人的文章进行一次整合，并将自己遇到的一些问题记录下来
+环境的搭建起初的参考文章是这，但是它有不少的错别字，以及很多步骤没有解释清楚，导致在安装hexo过程中，始终没法用 hexo s启动本地服务，最后找到了这篇文章，了解到下面这几个指令是不可或缺的：npm install hexo –savenpm i">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2015/08/18/hello-world/index.html">
+<meta property="og:title" content="使用github pages+hexo搭建博客">
+<meta property="og:url" content="http://yoursite.com/2015/08/20/使用github-pages-hexo搭建博客/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2015-08-18T04:52:47.854Z">
+<meta property="og:description" content="虽说参考了不少文章，但每篇文章都不能说是绝对的完善，因此搭建过程还是走了不少的弯路，在此主要对别人的文章进行一次整合，并将自己遇到的一些问题记录下来
+环境的搭建起初的参考文章是这，但是它有不少的错别字，以及很多步骤没有解释清楚，导致在安装hexo过程中，始终没法用 hexo s启动本地服务，最后找到了这篇文章，了解到下面这几个指令是不可或缺的：npm install hexo –savenpm i">
+<meta property="og:updated_time" content="2015-08-20T03:31:09.554Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="使用github pages+hexo搭建博客">
+<meta name="twitter:description" content="虽说参考了不少文章，但每篇文章都不能说是绝对的完善，因此搭建过程还是走了不少的弯路，在此主要对别人的文章进行一次整合，并将自己遇到的一些问题记录下来
+环境的搭建起初的参考文章是这，但是它有不少的错别字，以及很多步骤没有解释清楚，导致在安装hexo过程中，始终没法用 hexo s启动本地服务，最后找到了这篇文章，了解到下面这几个指令是不可或缺的：npm install hexo –savenpm i">
 
     
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -83,14 +83,14 @@ Quick">
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/08/18/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/2015/08/20/使用github-pages-hexo搭建博客/" title="使用github pages+hexo搭建博客" itemprop="url">使用github pages+hexo搭建博客</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Jianwen" target="_blank" itemprop="author">Jianwen</a>
 		
   <p class="article-time">
-    <time datetime="2015-08-18T04:52:47.854Z" itemprop="datePublished"> 發表於 2015-08-18</time>
+    <time datetime="2015-08-20T02:16:27.000Z" itemprop="datePublished"> 發表於 2015-08-20</time>
     
   </p>
 </header>
@@ -99,24 +99,36 @@ Quick">
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目錄</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#环境的搭建"><span class="toc-number">1.</span> <span class="toc-text">环境的搭建</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#主页显示内容修改"><span class="toc-number">2.</span> <span class="toc-text">主页显示内容修改</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#页脚用户头像"><span class="toc-number">2.0.0.1.</span> <span class="toc-text">页脚用户头像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#侧边栏分类和标签的显示"><span class="toc-number">2.0.0.2.</span> <span class="toc-text">侧边栏分类和标签的显示</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#其它杂七杂八"><span class="toc-number">3.</span> <span class="toc-text">其它杂七杂八</span></a></li></ol>
 		
 		</div>
 		
-		<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+		<p>虽说参考了不少文章，但每篇文章都不能说是绝对的完善，因此搭建过程还是走了不少的弯路，在此主要对别人的文章进行一次整合，并将自己遇到的一些问题记录下来</p>
+<h1 id="环境的搭建">环境的搭建</h1><p>起初的<a href="http://cnfeat.com/2014/05/10/2014-05-11-how-to-build-a-blog/" target="_blank" rel="external">参考文章是这</a>，但是它有不少的错别字，以及很多步骤没有解释清楚，导致在安装hexo过程中，始终没法用 hexo s启动本地服务，最后找到了<a href="http://blog.csdn.net/astraylinux/article/details/46455761" target="_blank" rel="external">这篇文章</a>，了解到下面这几个指令是不可或缺的：<br>npm install hexo –save<br>npm install hexo-server –save<br>npm install hexo-deployer-git –save<br>这是Hexo安装插件的方法，我认为是不是hexo安装以及它的本地服务的安装是分开的，导致之前的失败。这算是我遇到的第一个坑。</p>
+<p>第二个坑是在服务启动后，hexo g 始终无法生成主页，打开<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 链接总是报错“cannot GET /”查了半天，原来是在运行hexo之前还要运行下面这条指令：<br>npm install<br>这能将hexo 缺少的依赖装上，解决这个问题后，主页顺利打开，Oh yeah!</p>
+<p>最后还有<a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank" rel="external">这篇文章</a>应该看一下，步骤解释的更为详细</p>
+<h1 id="主页显示内容修改">主页显示内容修改</h1><h4 id="页脚用户头像">页脚用户头像</h4><p>这是修改了主题的内容，需要在主题目录下的source文件夹了进行修改后重新生成html，我这里需要将img下的author.jpg更换为我自己的头像。</p>
+<h4 id="侧边栏分类和标签的显示">侧边栏分类和标签的显示</h4><p>除了<a href="http://wuchong.me/blog/2014/11/20/how-to-use-jacman/" target="_blank" rel="external">这篇文章</a>提到的，在source目录下建立tags<br> 和 categories<br>文件夹以外，新建博客时千万不要忘了它应该是这个样子的：</p>
+<blockquote>
+<p>title: postName #文章页面上的显示名称，可以任意修改，不会出现在URL中<br>date: 2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改<br>categories:  #文章分类目录，可以为空，注意:后面有个空格<br>tags: #文章标签，可空，多标签请用格式[tag1,tag2,tag3]，注意:后面有个空格<br> -–<br>这里开始使用markdown格式输入你的正文。</p>
+</blockquote>
+<p>少了categories和tags这两项，主页上是不会把他们显示出来的。</p>
+<h1 id="其它杂七杂八">其它杂七杂八</h1><p>关于设置独立域名，基本每篇文章都有提到，但cname的概念和域名的概念，仅有<a href="http://coolshell.info/blog/2015/03/github-pages-blog.html" target="_blank" rel="external">这篇文章</a>提到了，另外，在github上界面操作你的github pages项目，应该读一读<a href="http://blog.csdn.net/renfufei/article/details/37725057" target="_blank" rel="external">这一篇博客</a>。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/hexo/">hexo</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/github-pages/">github pages</a><a href="/tags/hexo/">hexo</a>
+  </div>
 
 </div>
 
@@ -124,7 +136,7 @@ Quick">
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2015/08/18/hello-world/" data-title="Hello World | Hexo" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/2015/08/20/使用github-pages-hexo搭建博客/" data-title="使用github pages+hexo搭建博客 | Hexo" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -137,14 +149,14 @@ Quick">
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/08/18/my-new-post/" title="my new post">
-  <strong>上一篇：</strong><br/>
-  <span>
-  my new post</span>
+
+<div class="next">
+<a href="/2015/08/20/hello-world/"  title="Hello World">
+ <strong>下一篇：</strong><br/> 
+ <span>Hello World
+</span>
 </a>
 </div>
-
 
 </nav>
 
@@ -156,7 +168,7 @@ Quick">
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目錄</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#环境的搭建"><span class="toc-number">1.</span> <span class="toc-text">环境的搭建</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#主页显示内容修改"><span class="toc-number">2.</span> <span class="toc-text">主页显示内容修改</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#页脚用户头像"><span class="toc-number">2.0.0.1.</span> <span class="toc-text">页脚用户头像</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#侧边栏分类和标签的显示"><span class="toc-number">2.0.0.2.</span> <span class="toc-text">侧边栏分类和标签的显示</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#其它杂七杂八"><span class="toc-number">3.</span> <span class="toc-text">其它杂七杂八</span></a></li></ol>
  
   </div>
 
@@ -165,8 +177,38 @@ Quick">
 <aside class="clearfix">
 
   
+<div class="categorieslist">
+	<p class="asidetitle">分類</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/default/" title="default">default<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
 
   
+<div class="tagslist">
+	<p class="asidetitle">標簽</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/hexo/" title="hexo">hexo<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/github-pages/" title="github pages">github pages<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
 
   <div class="linkslist">
   <p class="asidetitle">友情鏈接</p>
